@@ -113,9 +113,13 @@
 	link.href = "https://dealer.invygo.com";
 	    link.target = "_blank";
 	document.body.appendChild(link);
-  var evt = new MouseEvent("click", {
-    ctrlKey: true
-  });
+	    var evt = document.createEvent("MouseEvents");    
+
+    //the tenth parameter of initMouseEvent sets ctrl key    
+    evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0,true, false, false, false, 0, null); 
+//   var evt = new MouseEvent("click", {
+//     ctrlKey: true
+//   });
 	    console.log("event ", evt);
   link.dispatchEvent(evt);
 }
