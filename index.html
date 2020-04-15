@@ -121,8 +121,9 @@
 //     ctrlKey: true
 //   });
 	    console.log("event ", evt);
-	    evt.preventDefault();
+	    
   link.dispatchEvent(evt);
+	    evt.preventDefault();
 }
 document.getElementById("xyz123").addEventListener('click', clickHandler)
 </script>
