@@ -116,6 +116,7 @@
   var evt = new MouseEvent("click", {
     ctrlKey: true
   });
+	    console.log("event ", evt);
   link.dispatchEvent(evt);
 }
 document.getElementById("xyz123").addEventListener('click', clickHandler)
