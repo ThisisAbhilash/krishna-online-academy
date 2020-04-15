@@ -111,6 +111,7 @@
         console.log('Click called');
 	var link = document.createElement('a');
 	link.href = "https://dealer.invygo.com";
+	    link.target = "_blank";
 	document.body.appendChild(link);
   var evt = new MouseEvent("click", {
     ctrlKey: true
